@@ -36,9 +36,7 @@ const App = () => {
       .catch((err) => {
         switch (err.code) {
           case "auth/invalid-email":
-            if (invalidChars) {
-              alert("Hello! I am an alert box!!");
-            }
+           
           case "auth/user-disabled":
           case "auth/user-not-found":
             setEmailError(err.message);
